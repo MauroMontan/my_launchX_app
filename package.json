@@ -1,10 +1,12 @@
 {
   "name": "my_launchx_app",
   "version": "1.0.0",
+  "type": "module",
   "description": "javascript project",
   "main": "main.js",
   "scripts": {
-    "test": "jest"
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest",
+    "start": "node main.js"
   },
   "author": "MauroMontan",
   "license": "ISC",
